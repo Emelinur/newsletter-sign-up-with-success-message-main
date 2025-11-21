@@ -1,0 +1,78 @@
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 58%);
+  --blue-900: hsl(234, 29%, 20%);
+  --blue-700: hsl(235, 18%, 26%);
+  --red: hsl(4, 100%, 67%);
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 106, 58, 1) 0%,
+    rgba(255, 82, 123, 1) 100%
+  );
+
+  /* Typography */
+  --ff: "Roboto", sans-serif;
+
+  /* Text Preset 1  Roboto Bold */
+  --fs: 56px;
+  --fs-1: 40px; /*(Mobile) */
+  --lh: 1;
+  --ls: 0;
+  --fw-bold: 700;
+
+  /* Text Preset 2 (Bold) Roboto Bold  */
+  --fs-2: 16px;
+  --lh-1: 1.5;
+  --fw-regular: 400;
+
+  /* Text Preset 3  Roboto Bold*/
+  --fs-3: 12px;
+
+  /* Spacing */
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1300: 104px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+
+body {
+  background-color: var(--blue-700);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: var(--white);
+  width: 56.5rem;    /* 904px */
+  height: 40.0625rem; /* 641px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--spacing-400);
+  padding: var(--spacing-400);
+  gap: var(--spacing-800);
+}
+.card-content{
+   display: flex;
+  flex-direction: column;
+}
