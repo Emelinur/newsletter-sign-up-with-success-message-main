@@ -5,8 +5,7 @@
   --blue-900: hsl(234, 29%, 20%);
   --blue-700: hsl(235, 18%, 26%);
   --red: hsl(4, 100%, 67%);
-  --gradient: linear-gradient(
-    90deg,
+  --gradient: linear-gradient(90deg,
     rgba(255, 106, 58, 1) 0%,
     rgba(255, 82, 123, 1) 100%
   );
@@ -75,4 +74,56 @@ main {
 .card-content{
    display: flex;
   flex-direction: column;
+  gap: var(--spacing-400);
+}
+.card-title{
+  font-size: var(--fs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls);
+  line-height: var(--lh);
+}
+.card-text{
+   font-size: var(--fs-2);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls);
+  line-height: var(--lh-1);
+}
+.card-list{
+  list-style-type: none;
+   font-size: var(--fs-2);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls);
+  line-height: var(--lh-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+form label{
+     font-size: var(--fs-3);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls);
+  line-height: var(--lh-1);
+}
+form input{
+  width: 100%;
+ padding: var(--spacing-200);
+ border-radius: var(--spacing-100);
+ border:1px solid var(--grey);
+}
+.submit_button{
+  background-color: var(--blue-900);
+  padding: var(--spacing-200);
+  color: var(--white);
+   font-size: var(--fs-2);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls);
+  line-height: var(--lh-1);
+  border-radius: var(--spacing-100);
+ border:1px solid var(--grey);
+}
+
+button:hover{
+  background: #FF6A3A;
+background: linear-gradient(90deg, rgba(255, 106, 58, 1) 0%, rgba(255, 82, 123, 1) 100%);
 }
