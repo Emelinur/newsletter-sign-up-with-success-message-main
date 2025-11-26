@@ -56,6 +56,8 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
+/* Sign-up form start */
 main {
   display: flex;
   justify-content: center;
@@ -129,14 +131,14 @@ button:hover {
     rgba(255, 82, 123, 1) 100%
   );
 }
-.card-img img{
+.card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-display: block;
+  display: block;
 }
 @media (max-width: 1024px) {
-   .card {
+  .card {
     background-color: var(--white);
     display: grid;
     grid-template-columns: 1fr;
@@ -145,20 +147,20 @@ display: block;
       "img"
       "content";
     align-items: center;
-    gap:0px;
+    gap: 0px;
   }
   .card-img {
     grid-area: img;
-     width: 100%;
-  height: 100%;
-  object-fit: cover;
-display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .card-content {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-400);
-    padding:var(--spacing-500)  0 var(--spacing-100) 0 ;
+    padding: var(--spacing-500) 0 var(--spacing-100) 0;
   }
   .card-title {
     font-size: var(--fs-1);
@@ -182,16 +184,16 @@ display: block;
   }
   .card-img {
     grid-area: img;
-     width: 100%;
-  height: 100%;
-  object-fit: cover;
-display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .card-content {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-400);
-    padding:var(--spacing-500) var(--spacing-300);
+    padding: var(--spacing-500) var(--spacing-300);
   }
   .card-title {
     font-size: var(--fs-1);
@@ -200,3 +202,72 @@ display: block;
     line-height: var(--lh);
   }
 }
+/* Sign-up form end */
+
+/* Success message start  */
+.card_success_message {
+  width: 31.5rem; /* 504px */
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  border: 1px solid var(--white);
+  border-radius: var(--spacing-400);
+  padding: var(--spacing-800);
+  background-color: var(--white);
+}
+
+.success_title {
+  font-size: var(--fs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls);
+  line-height: var(--lh);
+  color: var(--blue-900);
+}
+.success_text {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-1);
+  line-height: var(--lh-1);
+  color: var(--blue-900);
+}
+.success_btn {
+  padding: var(--spacing-200);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-1);
+  line-height: var(--lh-1);
+  color: var(--white);
+  background-color: var(--blue-900);
+  border-radius: var(--spacing-100);
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+  border: 0px;
+}
+.success_btn:hover,
+.success_btn:focus-visible {
+  background-color: #ff6a3a;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 106, 58, 1) 0%,
+    rgba(255, 82, 123, 1) 100%
+  );
+
+  box-shadow: 0 10px 20px rgba(255, 106, 58, 0.35);
+  transform: translateY(-1px);
+}
+@media (max-width: 768px) {
+  body {
+    background-color: var(--white);
+  }
+  .card_success_message {
+    width: 375px;
+    height: 623px;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-300);
+  }
+  .success_btn {
+    margin-top: auto;
+  }
+}
+/* Success message end */

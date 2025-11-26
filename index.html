@@ -1,104 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
 
-  <title>
-    Frontend Mentor | Newsletter sign-up form with success message
-  </title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <!-- Sign-up form start -->
+    <main>
+      <article class="card">
+        <div class="card-content">
+          <h1 class="card-title">Stay updated!</h1>
+          <p class="card-text">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="card-list">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              Product discovery and building what matters
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              Measuring to ensure updates are a success
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              And much more!
+            </li>
+          </ul>
+          <form action="">
+            <label for="email">Email address:</label><br />
+            <input
+              type="email"
+              id="form_mail"
+              name="email"
+              placeholder="email@company.com"
+            /><br />
+          </form>
+          <button type="submit" class="submit_button">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+        <picture class="card-img">
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/images/illustration-sign-up-tablet.svg"
+          />
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="Sign up illustration"
+          />
+        </picture>
+      </article>
+    </main>
 
-<body>
-  <main>
-    <article class="card">
-      <div class="card-content">
-        <h1 class="card-title">Stay updated!</h1>
-        <p class="card-text">
-          Join 60,000+ product managers receiving monthly updates on:
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <main>
+      <article class="card_success_message">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="64"
+          viewBox="0 0 21 21"
+        >
+          <g fill="none">
+            <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+            <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+          </g>
+        </svg>
+        <h1 class="success_title">Thanks for subscribing!</h1>
+        <p class="success_text">
+          A confirmation email has been sent to
+          <b>ash@loremcompany.com</b>.Please open it and click the button inside
+          to confirm your subscription.
         </p>
-        <ul class="card-list">
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-              <g fill="none">
-                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-              </g>
-            </svg>
-            Product discovery and building what matters
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-              <g fill="none">
-                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-              </g>
-            </svg>
-            Measuring to ensure updates are a success
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-              <g fill="none">
-                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-              </g>
-            </svg>
-            And much more!
-          </li>
-        </ul>
-        <!-- Sign-up form start -->
-        <form action="">
-          <label for="email">Email address:</label><br />
-          <input type="email" id="form_mail" name="email" placeholder="email@company.com" /><br />
-        </form>
-        <!-- Sign-up form end -->
+        <button class="success_btn">Dismiss message</button>
+      </article>
+    </main>
 
-        <button type="submit" class="submit_button">Subscribe to monthly newsletter</button>
-      </div>
-<picture class="card-img">
-  <source media="(min-width: 1024px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+    <!-- Success message end -->
 
-  <source media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-tablet.svg">
-
-  <img src="assets/images/illustration-sign-up-mobile.svg" alt="Sign up illustration">
-</picture>
-    </article>
-  </main>
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
-
-  <!-- Success message end -->
-
-
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
-  </div>
-</body>
-
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
