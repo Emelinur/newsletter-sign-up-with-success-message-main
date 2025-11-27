@@ -99,21 +99,52 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-form label {
+.label-header{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-100);
+  
+}
+.label-header label {
   font-size: var(--fs-3);
   font-weight: var(--fw-bold);
   letter-spacing: var(--ls);
   line-height: var(--lh-1);
 }
-form input {
+.error-msg{
+  display: none;
+  color:var(--red);
+   font-size: var(--fs-3);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls);
+  line-height: var(--lh-1);
+}
+.email_input{
   width: 100%;
   padding: var(--spacing-200);
   border-radius: var(--spacing-100);
   border: 1px solid var(--grey);
 }
+.email_input::placeholder{
+  font-size: var(--fs-2);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls);
+  line-height: var(--lh-1);
+  color: var(--grey);
+}
+.email_input.error{
+  display: none;
+border: 1px solid var(--red);
+}
+.email_input.error::placeholder{
+color: var(--red);
+}
+
 .submit_button {
+  width: 100%;
   background-color: var(--blue-900);
   padding: var(--spacing-200);
+  margin-top: var(--spacing-300);
   color: var(--white);
   font-size: var(--fs-2);
   font-weight: var(--fw-regular);
@@ -262,7 +293,7 @@ button:hover {
   .card_success_message {
     width: 375px;
     height: 623px;
-    display: flex;
+    display: none;
     justify-content: center;
     padding: var(--spacing-300);
   }
