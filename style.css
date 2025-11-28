@@ -103,7 +103,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-100);
-  
+
 }
 .label-header label {
   font-size: var(--fs-3);
@@ -133,8 +133,9 @@ main {
   color: var(--grey);
 }
 .email_input.error{
-  display: none;
+  display: flex;
 border: 1px solid var(--red);
+color: var(--red);
 }
 .email_input.error::placeholder{
 color: var(--red);
@@ -257,6 +258,13 @@ button:hover {
 .success_text {
   font-size: var(--fs-2);
   font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-1);
+  line-height: var(--lh-1);
+  color: var(--blue-900);
+}
+.placeholderText{
+ font-size: var(--fs-2);
+  font-weight: var(--fw-bold);
   letter-spacing: var(--ls-1);
   line-height: var(--lh-1);
   color: var(--blue-900);
