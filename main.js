@@ -24,8 +24,8 @@ newsletterForm.addEventListener("submit", (e) => {
 });
 successBtn.addEventListener("click", () => {
   successMessage.style.display = "none";
+  card.style.display = "";
   emailInput.value = "";
-  card.style.display = "flex";
   emailInput.classList.remove("error");
   errorMsg.style.display = "none";
 
