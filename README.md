@@ -43,8 +43,8 @@ _(Replace these paths with your actual project screenshots)_
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-vanilla-js-validation-YOUR-LINK-HERE)
-- Live Site URL: [GitHub Pages](https://emelinur.github.io/newsletter-sign-up-form/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/newsletter-sign-up-with-success-message-main-giq2FrM1P2)
+- Live Site URL: [GitHub Pages](https://emelinur.github.io/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
